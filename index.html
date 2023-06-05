@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/60b11cf779.js" crossorigin="anonymous"></script>
+    <title>Calculadora Tautológica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Calculadora Tautológica</h1>
+
+        <div class="calculadora">
+            <p class="result" id="resultado">aaaaa</p>
+
+            <table>
+
+                <tr>
+                    <td><button class="btn ac" style="width: 106px" onclick="clean()"> AC </button> </td>
+                    <td><button class="btn del" style="width: 106px" onclick="deletar()"><i class="fa-solid fa-delete-left"> </i> </button> </td>
+                </tr>
+
+                <tr>
+                    <td> <button class="btn especial" onclick="insert('A')"> A </button> </td>
+                    <td> <button class="btn especial" onclick="insert('B')"> B </button> </td>
+                    <td> <button class="btn especial" onclick="insert('C')"> C </button> </td>
+                    <td> <button class="btn especial" onclick="insert('D')"> D </button> </td>
+                </tr>
+
+                <tr>
+                    <td> <button class="btn neg" onclick="insert('~')"> ~ </button> </td>
+                    <td> <button class="btn conj" onclick="insert('^')"> ^ </button> </td>
+                    <td> <button class="btn disj" onclick="insert('v')"> v </button> </td>
+                    <td> <button class="btn xor" onclick="insert('&forall;')"> &forall; </button> </td>  
+                </tr>
+
+                <tr>
+                    <td> <button class="btn implic" onclick="insert('>')"> > </button> </td>
+                    <td> <button class="btn nor" onclick="insert('&darr;')"> &darr; </button> </td>
+                    <td> <button class="btn parentese" onclick="insert()"> ( </button> </td>
+                    <td> <button class="btn parentese2" onclick="insert()"> ) </button> </td> 
+                </tr>
+
+                <tr>
+                    <td> <button class="btn equiva" onclick="insert('&lt; &gt;')"> &lt; &gt; </button> </td>
+                    <td> <button class="btn nand" onclick="insert('&uarr;')"> &uarr; </button> </td>
+                    <td> <button class="btn igual" style="width: 106px" onclick="confirma()"> = </button> </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
